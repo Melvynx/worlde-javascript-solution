@@ -1,0 +1,62 @@
+export const MOTS = [
+  "avion",
+  "belle",
+  "chien",
+  "droit",
+  "eclat",
+  "forme",
+  "givre",
+  "havre",
+  "ideal",
+  "jouer",
+  "lourd",
+  "mains",
+  "noyer",
+  "ombre",
+  "porte",
+  "quite",
+  "rouge",
+  "sable",
+  "table",
+  "usure",
+  "vivre",
+  "wagon",
+  "xylo",
+  "zebre",
+];
+
+export const characters = [
+  "A",
+  "B",
+  "C",
+  "D",
+  "E",
+  "F",
+  "G",
+  "H",
+  "I",
+  "J",
+  "K",
+  "L",
+  "M",
+  "N",
+  "O",
+  "P",
+  "Q",
+  "R",
+  "S",
+  "T",
+  "U",
+  "V",
+  "W",
+  "X",
+  "Y",
+  "Z",
+  null,
+] as const;
+
+export type Character = (typeof characters)[number];
+
+export type Line = [Character, Character, Character, Character, Character];
+
+export type Board = [Line, Line, Line, Line, Line, Line];
